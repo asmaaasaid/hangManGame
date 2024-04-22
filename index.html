@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@300&family=Dancing+Script&family=Domine&family=Hanken+Grotesk&family=Inter:wght@300&family=Lato&family=Montserrat:wght@500;600&family=Open+Sans&family=Oswald&family=Outfit&family=Playfair+Display:wght@400;500&family=Poppins:ital,wght@0,300;0,600;1,300&family=Roboto+Slab&family=Roboto:wght@400;500&family=Titillium+Web:wght@600&family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-6/css/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Hangman Game</title>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="game-info d-flex justify-content-between">
+            <div class="d-flex">
+                <i class="fa-solid fa-sign-hanging  me-3 fs-1"></i>
+                <h1 class="game-name text-uppercase fs-4">hangman</h1>
+            </div>
+            
+            <h2
+             class="category text-capitalize fs-4">
+                word from: <span class="fs-5"></span>
+            </h2>
+        </div>
+        <hr>
+        <div class="row hangman-game">
+            <div class="col-lg-6 hangman-draw">
+                <div class="the-draw">
+                    <div class="the-stand"></div>
+                    <div class="the-hang"></div>
+                    <div class="the-rope"></div>
+                    <div class="the-man">
+                        <div class="head"></div>
+                        <div class="body"></div>
+                        <div class="hands"></div>
+                        <div class="legs"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6  ">
+                <div class="letters mt-3 mx-auto "></div>
+            </div>
+        </div>
+        <hr>
+        <div class="letter-guess"></div>
+    </div>
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>
